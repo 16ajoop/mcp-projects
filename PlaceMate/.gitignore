@@ -1,0 +1,31 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Local database
+placemate.db
+*.db-journal
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Build files
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Test and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE settings
+.idea/
+.vscode/

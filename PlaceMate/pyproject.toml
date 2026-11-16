@@ -1,0 +1,16 @@
+[project]
+name = "placemate"
+version = "0.1.0"
+description = "An MCP-powered campus placement assistant built with Python and SQLite."
+readme = "README.md"
+authors = [
+    { name = "Pooja V" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=2.3.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
