@@ -33,22 +33,40 @@ The project implements MCP **Tools, Resources, and Prompts**, backed by a local 
 
 ## Architecture
 
-```text
-       User
-        |
-        v
-  Claude Desktop
-        |
-        | Model Context Protocol
-        v
-  PlaceMate MCP Server
-        |
-        v
-  Python Application Logic
-        |
-        v
-   SQLite Database
+```mermaid
+flowchart TD
+    A["MCP Clients<br/>Claude Desktop / MCP Inspector"]
+    B["PlaceMate MCP Server<br/>Python · MCP SDK"]
+    
+    C["MCP Tools"]
+    D["MCP Resource<br/>jobs://{job_id}"]
+    E["MCP Prompt<br/>interview_prep"]
+    
+    F["Application Logic<br/>models.py"]
+    G[("SQLite Database<br/>placemate.db")]
+
+    A <-->|"MCP Protocol"| B
+
+    B --> C
+    B --> D
+    B --> E
+
+    C --> F
+    D --> F
+    E --> F
+
+    F <-->|"SQL Queries"| G
 ```
+
+### Architecture Overview
+
+- **MCP Clients:** Claude Desktop and MCP Inspector interact with the PlaceMate server.
+- **MCP Server:** Built with Python and the MCP SDK. Exposes tools, resources, and prompts.
+- **MCP Tools:** Support job searching and placement application management.
+- **MCP Resource:** Provides job details through a resource URI.
+- **MCP Prompt:** Generates an interview preparation prompt based on a job title and company.
+- **Application Logic:** Handles database operations through `models.py`.
+- **SQLite Database:** Stores sample job listings and student application records.
 
 ## Technology Stack
 
