@@ -4,7 +4,7 @@
 **Role:** AI & Data Science Engineer  
 **GitHub:** [@16ajoop](https://github.com/16ajoop)
 
-[![M8ven Score](https://m8ven.ai/badge/mcp/16ajoop-mcp-projects-16auz9?v=79b0f2132b7bf8066d1bfe0e4576d085)](https://m8ven.ai/mcp/16ajoop-mcp-projects-16auz9?s=readme)
+[![M8ven Score](https://m8ven.ai/badge/mcp/16ajoop-mcp-projects-16auz9?variant=verified)](https://m8ven.ai/mcp/16ajoop-mcp-projects-16auz9?s=readme)
 
 A practical learning and development repository exploring the **Model Context Protocol (MCP)** through Python-based implementations, AI integrations, and real-world applications.
 
